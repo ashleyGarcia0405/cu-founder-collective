@@ -3,6 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import React from "react";
+import SplineAnimation from "./components/SplineAnimation";
+
+
+
 
 const teamData = [
   {
@@ -63,10 +67,16 @@ const TeamSection = () => (
   </div>
 );
 
+
 const App = () => (
   <div className="app">
-    <TeamSection />
-    <ContactSection />
+    <div className="spline-wrapper">
+      <SplineAnimation />
+    </div>
+    <div className="content">
+      <TeamSection />
+      <ContactSection />
+    </div>
   </div>
 );
 
