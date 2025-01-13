@@ -16,4 +16,5 @@ const SplineAnimation = () => (
   </div>
 );
 
+
 export default SplineAnimation;

@@ -7,22 +7,16 @@ import SplineAnimation from "./components/spline_animations";
 
 const teamData = [
   {
-    name: "Georgina Alcaraz",
-    role: "CEO, Co-founder",
-    description: "Something something",
-    linkedin: "https://www.linkedin.com/in/gigi/",
+    name: "Bhavya Bellannagari",
+    role: "Co-founder",
+    description: "Computer Science and Entreprenuership @Columbia University",
+    linkedin: "https://www.linkedin.com/in/bhavya-bellannagari/",
   },
   {
     name: "Ashley Garcia",
-    role: "CTO, Co-founder",
-    description: "Something something",
-    linkedin: "https://www.linkedin.com/in/ashley/",
-  },
-  {
-    name: "Bhavya Bellannagari",
-    role: "COO, Co-founder",
-    description: "bhavya",
-    linkedin: "https://www.linkedin.com/in/bhavya/",
+    role: "Co-founder",
+    description: "Computer Science and Math @Columbia University",
+    linkedin: "https://www.linkedin.com/in/ashley-garcia1/",
   },
 ];
 
