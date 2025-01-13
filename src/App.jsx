@@ -5,9 +5,6 @@ import './App.css'
 import React from "react";
 import SplineAnimation from "./components/spline_animations";
 
-
-
-
 const teamData = [
   {
     name: "Georgina Alcaraz",
