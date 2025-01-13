@@ -2,34 +2,72 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+const teamData = [
+  {
+    name: "Georgina Alcaraz",
+    role: "CEO, Co-founder",
+    description: "Something something",
+    linkedin: "https://www.linkedin.com/in/gigi/",
+  },
+  {
+    name: "Ashley Garcia",
+    role: "CTO, Co-founder",
+    description: "Something something",
+    linkedin: "https://www.linkedin.com/in/ashley/",
+  },
+  {
+    name: "Bhavya Bellannagari",
+    role: "COO, Co-founder",
+    description: "bhavya",
+    linkedin: "https://www.linkedin.com/in/bhavya/",
+  },
+];
 
-  return (
-    <>
+const ContactSection = () => (
+  <div className="contact-section">
+    <h2>Contact Us</h2>
+    <div className="contact-options">
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <p>Email Us</p>
+        <a href="mailto:founders@anthrogen.com">founders@anthrogen.com</a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <p>Work With Us</p>
+        <a href="#open-roles">See Open Roles</a>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <div>
+        <p>Follow Us</p>
+        <a href="https://www.linkedin.com">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+);
 
-export default App
+const TeamSection = () => (
+  <div className="team-section">
+    <h2>Team</h2>
+    <div className="team-grid">
+      {teamData.map((member, index) => (
+        <div key={index} className="team-member">
+          <h3>{member.name}</h3>
+          <p>{member.role}</p>
+          <p>{member.description}</p>
+          <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const App = () => (
+  <div className="app">
+    <TeamSection />
+    <ContactSection />
+  </div>
+);
+
+export default App;

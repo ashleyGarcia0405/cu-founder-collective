@@ -40,3 +40,65 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-section,
+.contact-section {
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  flex: 1;
+  min-width: 250px;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.team-member h3 {
+  margin: 0 0 10px;
+}
+
+.team-member a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.contact-options div {
+  margin-bottom: 10px;
+}
+
+.contact-options a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.contact-options p {
+  margin: 0;
+  font-weight: bold;
+}
