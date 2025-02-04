@@ -20,6 +20,21 @@ const teamData = [
   },
 ];
 
+const timelineData = [
+  {
+    date: "2021",
+    event: "Company Founded",
+  },
+  {
+    date: "2022",
+    event: "First Product Launch",
+  },
+  {
+    date: "2023",
+    event: "Series A Funding",
+  },
+];
+
 const ContactSection = () => (
   <div className="contact-section">
     <h2>Contact Us</h2>
@@ -58,6 +73,23 @@ const TeamSection = () => (
   </div>
 );
 
+const TimelineSection = () => (
+  <div className="timeline-section">
+    <h2>Vertical Timeline</h2>
+    <div className="timeline">
+      {timelineData.map((item, index) => (
+        <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+          <div className="timeline-content">
+            <div className="timeline-number">{index + 1}</div>
+            <h3>{item.event}</h3>
+            <p>{item.date}</p>
+            <p>{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 const App = () => (
   <div className="app">
@@ -66,6 +98,7 @@ const App = () => (
     </div>
     <div className="content">
       <TeamSection />
+      <TimelineSection />
       <ContactSection />
     </div>
   </div>

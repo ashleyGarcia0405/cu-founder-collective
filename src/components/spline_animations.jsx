@@ -10,6 +10,8 @@ const SplineAnimation = () => (
       clipPath: "inset(0 0 60px 0)",
       width: "100%",
       height: "100vh",
+      paddingTop: 0,
+      paddintBotton:0,
     }}
   >
     <Spline scene="https://prod.spline.design/sgMk51ONrTMCt9eO/scene.splinecode" />
