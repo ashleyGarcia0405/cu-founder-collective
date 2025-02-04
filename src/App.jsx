@@ -97,8 +97,8 @@ const App = () => (
       <SplineAnimation />
     </div>
     <div className="content">
-      <TeamSection />
       <TimelineSection />
+      <TeamSection />
       <ContactSection />
     </div>
   </div>
