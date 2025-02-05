@@ -42,7 +42,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Albert Sans, sans-serif;
+  font-weight: 100;
   background-color: black;
   color: white;
   margin: 0;
@@ -56,7 +57,8 @@ body {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 100;
   margin-bottom: 20px;
 }
 
@@ -106,7 +108,7 @@ h2 {
 
 .timeline-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 0px 20px;
 }
 
 .timeline {
@@ -144,7 +146,7 @@ h2 {
 }
 
 .timeline-content {
-  background: #fff;
+  background: black;
   padding: 15px;
   border-radius: 8px;
   position: relative;

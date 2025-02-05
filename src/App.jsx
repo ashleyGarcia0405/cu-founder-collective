@@ -22,8 +22,13 @@ const teamData = [
 
 const timelineData = [
   {
-    date: "2021",
-    event: "Company Founded",
+    date: "Feb 2024",
+    event: "Founder Meetup",
+    description: "CU Founder Collective x Foundess x CORE",
+  },
+  {
+    date: "March 2024",
+    event: "Women's Poker Night",
   },
   {
     date: "2022",
@@ -75,15 +80,15 @@ const TeamSection = () => (
 
 const TimelineSection = () => (
   <div className="timeline-section">
-    <h2>Vertical Timeline</h2>
+    <h2>Our Agenda</h2>
     <div className="timeline">
       {timelineData.map((item, index) => (
         <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
           <div className="timeline-content">
             <div className="timeline-number">{index + 1}</div>
             <h3>{item.event}</h3>
-            <p>{item.date}</p>
             <p>{item.description}</p>
+            <p>{item.date}</p>
           </div>
         </div>
       ))}

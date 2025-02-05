@@ -7,7 +7,7 @@ const SplineAnimation = () => (
     style={{
       position: "relative",
       overflow: "hidden",
-      clipPath: "inset(0 0 60px 0)",
+      clipPath: "inset(80px 0 80px 0)",
       width: "100%",
       height: "100vh",
       paddingTop: 0,
