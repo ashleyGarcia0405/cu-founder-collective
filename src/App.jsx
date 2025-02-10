@@ -48,14 +48,6 @@ const ContactSection = () => (
         <p>Email Us</p>
         <a href="mailto:cufoundercollective@gmail.com">cufoundercollective@gmail.com</a>
       </div>
-      <div>
-        <p>Work With Us</p>
-        <a href="#open-roles">See Open Roles</a>
-      </div>
-      <div>
-        <p>Follow Us</p>
-        <a href="https://www.linkedin.com">LinkedIn</a>
-      </div>
     </div>
   </div>
 );
