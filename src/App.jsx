@@ -22,21 +22,21 @@ const teamData = [
 
 const timelineData = [
   {
-    date: "Feb 2024",
+    date: "Feb 2025",
     event: "Founder Meetup",
     description: "CU Founder Collective x Foundess x CORE",
   },
   {
-    date: "March 2024",
+    date: "March 2025",
     event: "Women's Poker Night",
   },
   {
-    date: "2022",
-    event: "First Product Launch",
+    date: "March 2025",
+    event: "Cookies and Code with ADI",
   },
   {
-    date: "2023",
-    event: "Series A Funding",
+    date: "April 2025",
+    event: "Startup Fair",
   },
 ];
 
