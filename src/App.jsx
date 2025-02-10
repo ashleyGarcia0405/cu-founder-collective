@@ -46,7 +46,7 @@ const ContactSection = () => (
     <div className="contact-options">
       <div>
         <p>Email Us</p>
-        <a href="mailto:founders@anthrogen.com">founders@anthrogen.com</a>
+        <a href="mailto:cufoundercollective@gmail.com">cufoundercollective@gmail.com</a>
       </div>
       <div>
         <p>Work With Us</p>
